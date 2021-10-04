@@ -54,6 +54,9 @@ echo '添加Lienol包'
 git clone $lienol_url package/Lienol
 
 echo '添加Passwall'
+git clone https://github.com/kenzok8/small
+git clone https://github.com/kenzok8/openwrt-packages
+git clone https://github.com/xiaorouji/openwrt-passwall
 echo 'CONFIG_PACKAGE_luci-app-passwall=y' >>.config
 echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=y' >>.config
 echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y' >>.config
